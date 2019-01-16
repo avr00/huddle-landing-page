@@ -60,8 +60,18 @@ nav #logo {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.right-side button:hover {
+  color: white;
+  background: hsl(257, 87%, 73%);
+  cursor: pointer;
+}
+
 .social-media {
   margin-top: 4rem;
+}
+
+.social-media a {
+  color: white;
 }
 
 .social-media i {
@@ -69,12 +79,22 @@ nav #logo {
   display: inline-block;
   border-radius: 50%;
   border: 1px solid white;
-  line-height: 0.6rem;
-  height: 0.6rem;
-  width: 0.6rem;
+  line-height: 0.7rem;
+  height: 0.7rem;
+  width: 0.7rem;
   vertical-align: middle;
   padding: 0.9rem;
   margin: 0 0.3rem;
+}
+
+.social-media .fa-facebook-f:hover {
+  color: #3b5998;
+}
+.social-media .fa-twitter:hover {
+  color: #1da1f2;
+}
+.social-media .fa-instagram:hover {
+  color: #e1306c;
 }
 
 @media only screen and (min-width: 800px) {
@@ -139,6 +159,5 @@ nav #logo {
     font-weight: 600;
     height: 2.8rem;
     width: 9rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   }
 }
