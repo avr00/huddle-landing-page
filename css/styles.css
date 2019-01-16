@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Poppins:400,500,700,800");
+
+/* Main CSS */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(257, 40%, 49%);
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+/* BACKGROUND */
+#bg-desktop {
+  display: none;
+}
+
+#bg-mobile {
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  position: absolute;
+}
+
+/* Nav Bar */
+
+nav #logo {
+  width: 9rem;
+  margin: 2rem 0 0 2rem;
+}
+
+/* Landing Section */
+
+#landing {
+  width: 80%;
+  margin: 4rem auto;
+}
+
+.right-side h1 {
+  font-family: "Poppins", sans-serif;
+}
+.right-side p {
+  font-size: 1rem;
+}
+
+.right-side button {
+  font-weight: 600;
+  font-family: "Open Sans";
+  border: none;
+  color: hsl(257, 40%, 49%);
+  background: white;
+  height: 2.6rem;
+  width: 13rem;
+  border-radius: 500px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.social-media {
+  margin-top: 4rem;
+}
+
+.social-media i {
+  font-size: 0.9rem;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid white;
+  line-height: 0.6rem;
+  height: 0.6rem;
+  width: 0.6rem;
+  vertical-align: middle;
+  padding: 0.9rem;
+  margin: 0 0.3rem;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    text-align: start;
+  }
+  /* Background */
+  #bg-desktop {
+    display: block;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+    position: absolute;
+  }
+
+  #bg-mobile {
+    display: none;
+  }
+
+  /* Nav Bar */
+  nav {
+    text-align: start;
+  }
+
+  nav {
+    margin-left: 6rem;
+  }
+
+  /* Landing Section */
+
+  #landing {
+    display: flex;
+  }
+
+  #landing .left-side {
+    flex-basis: 50%;
+    margin-right: 5rem;
+  }
+  #landing .left-side img {
+    width: 100%;
+  }
+
+  #landing .right-side {
+    flex-basis: 50%;
+    max-width: 25rem;
+  }
+
+  #landing .right-side h1 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  #landing .right-side p {
+    opacity: 0.8;
+  }
+
+  .social-media {
+    text-align: end;
+  }
+
+  button {
+    font-weight: 600;
+    height: 2.8rem;
+    width: 9rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+}
